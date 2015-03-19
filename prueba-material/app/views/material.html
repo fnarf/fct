@@ -1,0 +1,185 @@
+<div ng-controller="MyController">
+  <!-- <p style="padding-left: 20px;">
+    Bottom sheet can be dismissed with the service or a swipe down.
+</p> -->
+
+
+<!-- PRUEBA DE GRID: -->
+<md-toolbar class="md-primary">
+md-toolbar / normal / primary
+</md-toolbar>
+<md-toolbar class="md-medium-tall md-accent">
+md-toolbar / medium-tall / accent
+</md-toolbar>
+<md-toolbar class="md-tall md-warn">
+md-toolbar / tall / warn
+</md-toolbar>
+
+<section md-margin>
+
+    <section>
+        <span>Theme: PRIMARY: </span>
+        <md-button class="md-raised md-primary">raised-primary</md-button>
+        <md-button class="md-fab md-primary">fab-primary</md-button>
+    </section>
+
+    <section>
+        <span>Theme: ACCENT</span>
+        <md-button class="md-raised md-accent">raised-accent</md-button>
+        <md-button class="md-fab md-accent">fab-accent</md-button>
+    </section>
+
+    <section>
+        <span>Theme: WARN</span>
+        <md-button class="md-raised md-warn">raised-warn</md-button>
+        <md-button class="md-fab md-warn">fab-warn</md-button>
+    </section>
+
+</section>
+
+<section layout="row" layout-padding>
+    <div layout="column"
+        layout-align="center center"
+        flex="25"
+        style="background: aquamarine">
+        Columna 1</div>
+    <div layout="column"
+        layout-align="center center"
+        flex="25"
+        style="background: orange">
+        Columna 2</div>
+    <div layout="column"
+        layout-align="center center"
+        flex="25"
+        style="background: silver">
+        Columna 3</div>
+    <div layout="column"
+        layout-align="center center"
+        flex="25"
+        style="background: red">
+        Columna 4</div>
+</section>
+<section layout="row" layout-padding layout-margin>
+    <div layout="column"
+        layout-align="center center"
+        flex="15"
+        style="background: aquamarine">
+        Columna 1</div>
+    <div layout="column"
+        layout-align="center center"
+        flex="25"
+        style="background: orange">
+        Columna 2</div>
+    <div layout="column"
+        layout-align="center center"
+        flex="20"
+        style="background: silver">
+        Columna 3</div>
+    <div layout="column"
+        layout-align="center center"
+        flex="30"
+        style="background: red">
+        Columna 4</div>
+</section>
+<section layout="row" layout-padding md-wrap>
+    <div layout="column"
+        layout-align="center center"
+        flex="50"
+        style="background: aquamarine">
+        Columna 1</div>
+    <div layout="column"
+        layout-align="center center"
+        flex="75"
+        style="background: orange">
+        Columna 2</div>
+    <div layout="column"
+        layout-align="center center"
+        flex="55"
+        style="background: silver">
+        Columna 3</div>
+    <div layout="column"
+        layout-align="center center"
+        flex="60"
+        style="background: red">
+        Columna 4</div>
+</section>
+
+
+
+    <!-- <div
+        layout="row"
+        layout-padding
+        layout-wrap
+        style="background: silver">
+
+        <div
+            class="col"
+            layout="column"
+            layout-align="center center"
+            flex="33"
+            flex-order="2"
+            style="color: white; background: red">
+            Columna 1
+        </div>
+        <div
+            class="col"
+            layout="column"
+            layout-align="center center"
+            flex="33"
+            flex-order="3"
+            style="color: black; background: aquamarine">
+            Columna 2
+        </div>
+        <div
+            class="col"
+            layout="column"
+            layout-align="center center"
+            flex="33"
+            flex-order="1"
+            style="color: black; background: lime">
+            Columna 3
+        </div>
+        <div
+            class="col"
+            layout="column"
+            layout-align="center center"
+            flex="33"
+            flex-order="1"
+            style="color: black; background: lime">
+            Columna 4
+        </div>
+
+    </div>
+
+    <section id="botonera"
+        layout="row"
+        layout-padding
+        style="background: lightgrey">
+
+        <md-button
+            class="md-raised"
+            ng-click="mostrarArray()">
+                {{fran.nombre}}
+        </md-button>
+
+        <md-checkbox ng-model="fran.apellido" aria-label="Checkbox 1">
+            Checkbox 1: {{ fran.nombre }}
+        </md-checkbox>
+
+    </section> -->
+
+
+<!-- <div class="bottom-sheet-demo inset" layout="column" layout-sm="row" layout-align="center">
+    <md-button class="md-primary" ng-click="showListBottomSheet($event)">
+    Show as List
+</md-button>
+<div style="width:50px;"></div>
+<md-button class="md-primary" ng-click="showGridBottomSheet($event)">
+Show as Grid
+</md-button>
+</div>
+<br/>
+<b layout="row" layout-align="center center" layout-margin>
+  {{alert}}
+</b> -->
+</div>
