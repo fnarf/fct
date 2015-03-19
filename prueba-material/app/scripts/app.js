@@ -35,6 +35,10 @@ var app = angular
         templateUrl: 'views/material.html',
         controller: 'MyController'
       })
+      .when('/material/form', {
+        templateUrl: 'views/material-form.html',
+        controller: 'MaterialFormCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

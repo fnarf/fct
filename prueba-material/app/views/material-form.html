@@ -1,0 +1,14 @@
+<!-- <form action="" name="myForm" id="myForm">
+	<select ng-model="miProvinciaSeleccionada" ng-options="provincia as provincia.nombre for provincia in provincias">
+		<option value="">-- Elige una opción --</option>
+	</select>
+	<br/>
+	La provincia seleccionada es: {{miProvinciaSeleccionada.nombre}}
+</form> -->
+
+<md-select placeholder="-- choose an option --" ng-model="options">
+	<md-option ng-value="option" ng-repeat="option in options">{{option}}</md-option>
+</md-select>
+<md-button ng-click="selected=true">Select</md-button>
+<br/>
+The selected value is: {{options}}

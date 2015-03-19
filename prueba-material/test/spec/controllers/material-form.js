@@ -1,17 +1,17 @@
 'use strict';
 
-describe('Controller: AboutCtrl', function () {
+describe('Controller: MaterialFormCtrl', function () {
 
   // load the controller's module
   beforeEach(module('appPruebaMaterialApp'));
 
-  var AboutCtrl,
+  var MaterialFormCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    AboutCtrl = $controller('AboutCtrl', {
+    MaterialFormCtrl = $controller('MaterialFormCtrl', {
       $scope: scope
     });
   }));

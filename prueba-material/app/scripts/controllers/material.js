@@ -7,6 +7,10 @@ $scope.fran = {
 
 $scope.numbers = [];
 
+$scope.chorrada = function(){
+    alert("cancamusa");
+};
+
 $scope.randomizeNumbers = function(count){
     for(var i = 0; i < count; i++){
         var number = Math.round((Math.random() * 100) / (100/count));
