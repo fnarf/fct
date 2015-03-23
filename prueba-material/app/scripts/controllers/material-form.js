@@ -7,39 +7,15 @@
  * # MaterialFormCtrl
  * Controller of the appPruebaMaterialApp
  */
- // app.controller('MaterialFormCtrl', ['$scope', function ($scope) {
 
- // 	$scope.provincias=[
- // 	{
- // 		idProvincia:2,
- // 		nombre:"Castellón"
- // 	},
- // 	{
- // 		idProvincia:3,
- // 		nombre:"Alicante"
- // 	},
- // 	{
- // 		idProvincia:1,
- // 		nombre:"Valencia"
- // 	},
- // 	{
- // 		idProvincia:7,
- // 		nombre:"Teruel"
- // 	},
- // 	{
- // 		idProvincia:5,
- // 		nombre:"Tarragona"
- // 	}
- // 	];
+ app.controller('MaterialFormCtrl', ['$scope', '$mdSidenav', '$mdBottomSheet', function($scope, $mdSidenav, $mdBottomSheet) {
+ 	$scope.options = ['Chelsea', 'Financial District', 'Midtown', 'West Village', 'Williamsburg'];
 
- // 	$scope.miProvinciaSeleccionada = {};
+ 	$scope.openBottomSheet = function() {
+ 		$mdBottomSheet.show({
+ 			templateUrl: 'views/material-bottomSheet.html'
+ 		});
+ 	};
 
-
- // }]);
-
-
-app.controller('MaterialFormCtrl', function($scope) {
-  $scope.options = ['Chelsea', 'Financial District', 'Midtown', 'West Village', 'Williamsburg'];
-  $scope.neighborhoods2 = ['Chelsea', 'Financial District', 'Lower Manhattan', 'Midtown', 'Soho', 'Upper Manhattan', 'West Village', 'Williamsburg' ];
-});
+ }]);
 

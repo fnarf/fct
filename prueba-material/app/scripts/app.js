@@ -21,7 +21,7 @@ var app = angular
     'ngMaterial'
   ]);
 
-  app.config(function ($routeProvider) {
+app.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -38,6 +38,14 @@ var app = angular
       .when('/material/form', {
         templateUrl: 'views/material-form.html',
         controller: 'MaterialFormCtrl'
+      })
+      .when('/material/sidenav', {
+        templateUrl: 'views/material-sidenav-main.html',
+        controller: 'MaterialSidenavCtrl'
+      })
+      .when('/material/dialog', {
+        templateUrl: 'views/material-dialog.html',
+        controller: 'MaterialDialogCtrl'
       })
       .otherwise({
         redirectTo: '/'
